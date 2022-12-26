@@ -17,9 +17,9 @@ const savedMe = localStorage.getItem(LOCALSTORAGE_KEY);
 const API_ROOT =
   process.env.NODE_ENV === "production"
     ? "/api"
-    : 'http://localhost:4000';
+    : 'ws://localhost:4000';
 
-const client = new WebSocket('http://localhost:4000/api')
+const client = new WebSocket('ws://localhost:4000/api')
 client.onopen = () => console.log('backend socket server connected')
 
 const ChatProvider = (props) => {
