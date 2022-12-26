@@ -11,7 +11,7 @@ import mongo from './mongo'
 
 import path from "path";
 
-import express from "express";
+
 import cors from "cors";
 
 const app = express();
