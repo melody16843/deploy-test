@@ -1,4 +1,4 @@
-import express from 'express'
+const express = require('express');
 import http from 'http'
 import dotenv from "dotenv-defaults"
 import mongoose from 'mongoose'
