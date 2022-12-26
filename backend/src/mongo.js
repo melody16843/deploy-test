@@ -1,7 +1,7 @@
-// import mongoose from 'mongoose';
-const mongoose = require('mongoose');
-const dotenv = require('dotenv-defaults')
-// import dotenv from 'dotenv-defaults';
+import mongoose from 'mongoose';
+// const mongoose = require('mongoose');
+// const dotenv = require('dotenv-defaults')
+import dotenv from 'dotenv-defaults';
 export default {
     connect: () => {
         dotenv.config();
