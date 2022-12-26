@@ -16,7 +16,7 @@ const savedMe = localStorage.getItem(LOCALSTORAGE_KEY);
 
 const API_ROOT =
   process.env.NODE_ENV === "production"
-    ? "/api"
+    ? "/"
     : 'ws://localhost:4000';
 
 const client = new WebSocket(API_ROOT)
