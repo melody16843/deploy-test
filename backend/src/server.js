@@ -1,18 +1,25 @@
 const express = require('express');
-import http from 'http'
-import dotenv from "dotenv-defaults"
-import mongoose from 'mongoose'
-import WebSocket from 'ws';
+const http = require('http');
+const dotenv = require ('dotenv-defaults');
+const mongoose = require('mongoose');
+const WebSocket = require('ws');
+const uuidv4 = require('uuid');
+const cors = require('cors');
+const path = require('path');
+// import http from 'http'
+// import dotenv from "dotenv-defaults"
+// import mongoose from 'mongoose'
+// import WebSocket from 'ws';
 import wsConnect from './wsConnect'
-import {v4 as uuidv4} from 'uuid'
+// import {v4 as uuidv4} from 'uuid'
 // import {useState} from 'react'
 
 import mongo from './mongo'
 
-import path from "path";
+// import path from "path";
 
 
-import cors from "cors";
+// import cors from "cors";
 
 const app = express();
 
