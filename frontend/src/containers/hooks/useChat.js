@@ -19,7 +19,7 @@ const API_ROOT =
     ? "/api"
     : 'ws://localhost:4000';
 
-const client = new WebSocket('ws://localhost:4000')
+const client = new WebSocket(API_ROOT)
 client.onopen = () => console.log('backend socket server connected')
 
 const ChatProvider = (props) => {
